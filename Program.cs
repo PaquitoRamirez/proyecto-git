@@ -43,7 +43,7 @@ namespace CadenasToNumeros
 
             string idnumfactura = "1";
             int limite = 50;
-            List<string> resultado = sftFactura
+            var resultado = sftFactura
                             .Where(t => t.CveFactura.ToUpper().Contains(idnumfactura.ToUpper()) && list.Contains(t.CveEstado.ToString()))
                             .Take(limite)
                             .ToList();
