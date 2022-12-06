@@ -7,5 +7,6 @@ namespace CadenasToNumeros
     public class Products
     {
         public string fruit { get; set; }
+        public int amount { get; set; }
     }
 }
