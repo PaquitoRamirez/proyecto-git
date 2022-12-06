@@ -37,12 +37,9 @@ namespace CadenasToNumeros
              sftFactura.Add(new SftFacturas() { CveFactura = "23",  CveEstado = 2,  NumFacturaProveedor = ""});
              sftFactura.Add(new SftFacturas() { CveFactura = "191",  CveEstado = 9,  NumFacturaProveedor = ""});             
 
-
             string split = "0,2,4,6,9,11";
             List<string> list = new List<string>();
             list = split.Split(',').ToList();
-
-
 
             string idnumfactura = "1";
             int limite = 50;
@@ -72,33 +69,9 @@ namespace CadenasToNumeros
             foreach (var item in resultado3)
                 Console.WriteLine(item.CveFactura);
 
-
-
-
-
-
-         }
+            Console.WriteLine("Termina Programa ...");
+        }
     }
-
-    public class Product
-    {
-        public string fruit { get; set; }
-        
-    }
-
-    //public class SftFacturas
-    //{
-    //    public string CveFactura { get; set; }
-    //    public string  NumFacturaProveedor { get; set; }
-    //    public decimal CveEstado { get; set; }
-        
-    //}
-    
-    //public class SfcEstados
-    //{
-    //    public decimal CveEstado { get; set; }
-    //    public string DesEstadoFact { get; set; }
-    //} 
 
 
 }
