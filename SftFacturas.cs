@@ -6,7 +6,6 @@ namespace CadenasToNumeros
 {
     public class SftFacturas
     {
-
         public string CveFactura { get; set; }
         public string NumFacturaProveedor { get; set; }
         public decimal CveEstado { get; set; }
